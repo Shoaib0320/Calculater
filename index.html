@@ -3,11 +3,75 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Calculater</title>
+
+    <style>
+        body{
+            background-color: #000000;
+            color: white;
+        }
+
+        h1{
+            font-size: 300%;
+            margin-top: 200px;
+        }
+        .main-div{
+            margin-top: 100px;
+            margin-left: 400px;
+            margin-right: 400px;
+       
+        }
+        button{
+            background-color: brown;
+            color: white;
+            width: 80px;
+            height: 60px;
+            text-align: center;
+            font-size: 150%;
+            border-radius: 30px;
+            border: 1px solid black;
+        }
+        #yellow{
+            background-color: #ff9f0a;
+            text-align: center;
+            font-size: 150%;
+        }
+        .color{
+            background-color: #333333;
+            font-size: 190%;
+        }
+        .abc{
+            background-color: #a5a5a5;
+            
+        }
+        .color-1{
+            background-color: #3d3636;
+        }
+      #big{
+        
+        width: 185px;
+        text-align: left;
+        padding-left: 35px;
+      }
+      hr{
+      margin-left: 280px;
+      margin-right:400px;
+      margin-top: 50px;
+      }
+
+      #inp{
+        width: 320px;
+        height: 50px;
+        font-size: 200%;
+        padding: 5px;
+      }
+ 
+    </style>
+
 </head>
 <body>
 
-    <center></center>
+    <center>
 
     <div>
         <h1>Calculatar</h1>
@@ -18,47 +82,47 @@
 
         <div>
 
-            <button onclick="clearall()">AC</button>
-            <button onclick="btnClick('%')">%</button>
-            <button onclick="btnClick('%')">%</button>
-            <button onclick="clr()">Clear</button>
-            
+            <button class="abc" onclick="clearall()">AC</button>
+            <button class="abc" onclick="btnClick('%')">+/-</button>
+            <button class="abc" onclick="btnClick('%')">%</button>
+            <button class="abc" id="yellow" onclick="clr()">Clear</button>
+
 
         </div>
         <br>
 
         <div>
-            <button onclick="btnClick (9)">9</button>
-            <button onclick="btnClick (8)">8</button>
-            <button onclick="btnClick (7)">7</button>
-            <button onclick="btnClick ('+')">+</button>
+            <button class="color-1" onclick="btnClick (9)">9</button>
+            <button class="color-1" onclick="btnClick (8)">8</button>
+            <button class="color-1" onclick="btnClick (7)">7</button>
+            <button id="yellow" onclick="btnClick ('+')">+</button>
 
         </div>
         <br>
 
         <div>
-            <button onclick="btnClick (6)">6</button>
-            <button onclick="btnClick (5)">5</button>
-            <button onclick="btnClick (4)">4</button>
-            <button onclick="btnClick ('-')">-</button>
+            <button class="color-1" onclick="btnClick (6)">6</button>
+            <button class="color-1" onclick="btnClick (5)">5</button>
+            <button class="color-1" onclick="btnClick (4)">4</button>
+            <button id="yellow" onclick="btnClick ('-')">-</button>
 
         </div>
         <br>
         <div>
-            <button onclick="btnClick (3)">3</button>
-            <button onclick="btnClick (2)">2</button>
-            <button onclick="btnClick (1)">1</button>
-            <button onclick="btnClick ('*')">X</button>
+            <button class="color-1" onclick="btnClick (3)">3</button>
+            <button class="color-1" onclick="btnClick (2)">2</button>
+            <button class="color-1" onclick="btnClick (1)">1</button>
+            <button id="yellow" onclick="btnClick ('*')">X</button>
         </div>
         <br>
         <div>
-            <button onclick="btnClick (0)">0</button>
-            <button onclick="btnClick ('00')">00</button>
-            <button onclick="btnClick ('/')">/</button>
-            <button onclick="eq()">=</button>
+            <button class="color-1" onclick="btnClick (0)">0</button>
+            <button class="color-1" onclick="btnClick ('00')">00</button>
+            <button class="color-1" onclick="btnClick ('/')">/</button>
+            <button id="yellow" onclick="eq()">=</button>
         </div>
     </div>
-    
+</center>
 
     <script>
 
